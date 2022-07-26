@@ -1,11 +1,12 @@
 /* eslint-disable @next/next/no-img-element */
 import React from 'react'
+import { Element } from 'react-scroll';
 
 type Props = {}
 
 const Contact = (props: Props) => {
   return (
-    <footer className="bg-white pt-20 lg:pt-[120px] pb-10 lg:pb-20 relative z-10">
+    <Element name='contact' className="bg-white pt-20 lg:pt-[120px] pb-10 lg:pb-20 relative z-10">
        <div className="container">
           <div className="flex flex-wrap -mx-4">
              <div className="w-full sm:w-2/3 lg:w-3/12 px-4">
@@ -418,7 +419,7 @@ const Contact = (props: Props) => {
              </svg>
           </span>
        </div>
-    </footer>
+    </Element>
   )
 }
 
