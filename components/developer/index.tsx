@@ -1,17 +1,22 @@
-import Contact from '@components/common/contact/Contact'
-import PageDesktopLayout from '@layouts/PageDesktopLayout'
 import React from 'react'
-import MyMindsets from './MyMindsets'
-import MySkills from './MySkills'
+
+import PageDesktopLayout from '@layouts/PageDesktopLayout'
+
+import Contact from '@components/common/contact/Contact'
+import DevStrenths from './DevStrenths'
+import DevSkills from './DevSkills'
+import DevWork from './DevWork'
+import DevAbout from './DevAbout'
 
 type Props = {}
 
 const DeveloperPage = (props: Props) => {
   return (
     <PageDesktopLayout>
-      <h1>I&apos;m an awesome developer</h1><br/>
-      <MySkills />
-      <MyMindsets />
+      <DevAbout />
+      <DevSkills />
+      <DevStrenths />
+      <DevWork />
       <Contact />
     </PageDesktopLayout>
   )
