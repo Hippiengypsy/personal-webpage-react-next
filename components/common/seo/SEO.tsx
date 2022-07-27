@@ -7,9 +7,11 @@ type SEOProps = {
 
 const SEO = (props: SEOProps) => {
     const { title } = props;
+    const seoTitle = `${title} | ChangYeol Lee`
+
   return (
         <Head>
-            <title>{title} | ChangYeol Lee</title>
+            <title>{seoTitle}</title>
         </Head>
     )
 }
