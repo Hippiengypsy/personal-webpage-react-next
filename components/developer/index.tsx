@@ -3,7 +3,7 @@ import React from 'react'
 import PageDesktopLayout from '@layouts/PageDesktopLayout'
 
 import Contact from '@components/common/contact/Contact'
-import DevStrenths from './DevStrenths'
+import DevStrengths from './DevStrengths'
 import DevSkills from './DevSkills'
 import DevWork from './DevWork'
 import DevAbout from './DevAbout'
@@ -15,7 +15,7 @@ const DeveloperPage = (props: Props) => {
     <PageDesktopLayout>
       <DevAbout />
       <DevSkills />
-      <DevStrenths />
+      <DevStrengths />
       <DevWork />
       <Contact />
     </PageDesktopLayout>

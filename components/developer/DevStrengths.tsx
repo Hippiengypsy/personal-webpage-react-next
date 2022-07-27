@@ -3,7 +3,7 @@ import { Element } from 'react-scroll';
 
 type Props = {}
 
-const DevStrenths = (props: Props) => {
+const DevStrengths = (props: Props) => {
   return (
     <Element name="devStrength" className='h-screen bg-yellow-200 border-solid border-violet-500 hover:bg-neutral-700 border-8'>
         <span>my strenths with visual / animation</span><br/>
@@ -25,4 +25,4 @@ const DevStrenths = (props: Props) => {
   )
 }
 
-export default DevStrenths;
+export default DevStrengths;
