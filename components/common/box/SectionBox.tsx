@@ -9,7 +9,7 @@ type SectionBoxProps = {
 const SectionBox = (props: SectionBoxProps) => {
     const { children, className } = props
   return (
-    <div className={clsx('h-screen bg-gray-900 border-violet-500 border-4 hover:bg-slate-500', className)}>
+    <div className={clsx('h-screen bg-gray-900 border-violet-500 border-4 hover:bg-slate-500 flex justify-between', className)}>
         {children}
     </div>
   )

@@ -9,7 +9,7 @@ type ItemBoxProps = {
 const ItemBox = (props: ItemBoxProps) => {
     const { children, className } = props
   return (
-    <div className={clsx('border-2 mx-20 my-40 h-1/2 overflow-auto', className)}>
+    <div className={clsx('border-2 overflow-auto ', className)}>
         {children}
     </div>
   )
