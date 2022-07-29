@@ -9,7 +9,7 @@ type Grid2BoxProps = {
 const Grid2Box = (props: Grid2BoxProps) => {
     const { children, className } = props
   return (
-    <div className={clsx('border-2 grid grid-cols-2 line min-w-full', className)}>
+    <div className={clsx('grid grid-cols-1 max-w-6xl my-auto sm:p-6 md:grid-cols-2 lg:p-8 border-2', className)}>
         {children}
     </div>
   )
