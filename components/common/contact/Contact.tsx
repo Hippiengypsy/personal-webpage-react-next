@@ -1,6 +1,6 @@
 import React from 'react'
 import { Element } from 'react-scroll';
-import Grid2Box from '../box/Grid2Box';
+import Col2Box from '../box/Col2Box';
 import ItemBox from '../box/ItemBox';
 import SectionBox from '../box/SectionBox';
 import ContactForm from './ContactForm';
@@ -11,7 +11,7 @@ const Contact = (props: Props) => {
   return (
     <Element name='contact'>
         <SectionBox>
-            <Grid2Box>
+            <Col2Box>
                 <ItemBox>
                     <h1 className="text-4xl sm:text-5xl text-gray-800 dark:text-white font-extrabold tracking-tight">
                         Contact Me
@@ -31,7 +31,7 @@ const Contact = (props: Props) => {
                 <ItemBox>
                     <ContactForm />
                 </ItemBox>
-            </Grid2Box>
+            </Col2Box>
         </SectionBox>
     </Element>
   )
