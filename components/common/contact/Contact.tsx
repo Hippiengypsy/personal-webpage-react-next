@@ -10,9 +10,9 @@ type Props = {}
 const Contact = (props: Props) => {
   return (
     <Element name='contact'>
-        <SectionBox>
-            <Col2Box>
-                <ItemBox>
+        <SectionBox className="section-3 flex">
+            <div className='grid grid-cols-1 my-auto md:grid-cols-2'>
+                <div className='h-full px-10 py-12 m-2 bg-gray-100 dark:bg-gray-800'>
                     <h1 className="text-4xl sm:text-5xl text-gray-800 dark:text-white font-extrabold tracking-tight">
                         Contact Me
                     </h1>
@@ -24,14 +24,14 @@ const Contact = (props: Props) => {
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
                         </svg>
                         <div className="ml-4 text-md tracking-wide font-semibold w-40">
-                            NewEmail@acme.org
+                            NewEmail@gmail.com
                         </div>
                     </div>
-                </ItemBox>
-                <ItemBox>
+                </div>
+                <div className='h-full px-10 py-12 m-2 bg-gray-100 dark:bg-gray-800'>
                     <ContactForm />
-                </ItemBox>
-            </Col2Box>
+                </div>
+            </div>
         </SectionBox>
     </Element>
   )
