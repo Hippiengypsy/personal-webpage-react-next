@@ -10,7 +10,7 @@ const DevWork = (props: Props) => {
   return (
     <Element name="devWork">
       <SectionBox>
-        <Rox2Box>
+        <div>
           <ItemBox>
             <div>my works(my toy projects)</div>
             <div>the layout of this section should be in 2 row</div>
@@ -32,9 +32,9 @@ const DevWork = (props: Props) => {
               <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#travel</span>
               <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#winter</span>
             </div>
-          </div>          
+          </div>
           </ItemBox>
-        </Rox2Box>
+        </div>
        </SectionBox>
     </Element>
   )
