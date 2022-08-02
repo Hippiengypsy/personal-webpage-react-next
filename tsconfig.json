@@ -39,6 +39,6 @@
       ],
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "tailwind.config.js"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "tailwind.config.js", "components/common/toggleTheme/Toggle01.jsx"],
   "exclude": ["node_modules"]
 }
