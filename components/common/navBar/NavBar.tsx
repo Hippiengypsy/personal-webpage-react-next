@@ -7,12 +7,15 @@ import ToggleTheme from '../toggleDarkMode/ToggleTheme';
 
 const Navbar = () => {
     const [nav, setNav] = useState(false)
-    const handleClick = () => setNav(!nav)
-
+    const handleClick = () => {
+      setNav(!nav);
+      console.log("handleClick");
+      
+    }
     const handleClose =()=> setNav(!nav)
 
   return (
-    <div className='w-screen h-[80px] z-10 bg-zinc-200 drop-shadow-lg'>
+    <div className='w-screen h-[80px] z-10 bg-zinc-200 drop-shadow-lg sticky top-0'>
       <div className='px-2 flex justify-between items-center w-full h-full'>
         <div className='flex items-center'>
           <h1 className='text-3xl font-bold mr-4 sm:text-4xl'><a href='./'>ANOTHER SIDE OF ME</a></h1>
@@ -43,6 +46,8 @@ const Navbar = () => {
           <li className='border-b-2 border-zinc-300 w-full'><Link onClick={handleClose} to="devStrength" smooth={true} duration={500}>Strength</Link></li>
           <li className='border-b-2 border-zinc-300 w-full'><Link onClick={handleClose} to="devWork" smooth={true} duration={500}>Work</Link></li>
           <li className='border-b-2 border-zinc-300 w-full'><Link onClick={handleClose} to="contact" smooth={true} duration={500}>Contact</Link></li>
+          <ToggleTheme />
+
         {/* <div className='flex flex-col my-4'>
             <button className='bg-transparent text-indigo-600 px-8 py-3 mb-4'>Sign In</button>
             <button className='px-8 py-3'>Sign Up</button>

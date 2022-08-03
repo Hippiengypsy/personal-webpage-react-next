@@ -1,4 +1,4 @@
-import { ThemeToggle } from 'hook/ThemeToggle.hook';
+import { useThemeToggle } from 'hook/useThemeToggle.hook';
 import React, { useState } from 'react'
 
 type Props = {}
@@ -6,17 +6,15 @@ type Props = {}
 
 const ToggleTheme = (props: Props) => {
   const [darkMode, setDarkMode] = useState(false);
+  const ThemeToggle = useThemeToggle();
 
-  const HandleToggle = ThemeToggle();
-  
-  const HandleClick = () => {
-
-    HandleToggle;
+  const HandleToggle = () => {
+    ThemeToggle;
     setDarkMode(!darkMode);
   };
   
   return (
-    <button onClick={HandleClick}>
+    <button onClick={HandleToggle}>
       {darkMode ? (
         <svg className="w-8 h-8 md:w-10 md:h-10" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path

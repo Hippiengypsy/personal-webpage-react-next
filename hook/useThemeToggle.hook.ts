@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 
-export const ThemeToggle = () => {
+export const useThemeToggle = () => {
   useEffect(() => {
       if(localStorage.theme === undefined) {
         localStorage.theme = 'dark';
@@ -11,6 +11,9 @@ export const ThemeToggle = () => {
       } else {
         document.documentElement.classList.remove('dark')
       }
+
+      console.log("ThemeToggle");
+
     }
   )
 }
