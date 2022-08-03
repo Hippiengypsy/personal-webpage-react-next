@@ -4,7 +4,7 @@ type Props = {}
 
 const ContactForm = (props: Props) => {
   return (
-    <form className="p-6 flex flex-col justify-center">
+    <form className="flex flex-col justify-center">
         <div className="flex flex-col my-1">
             <label htmlFor="name" className="hidden">Full Name</label>
             <input type="name" name="name" id="name" placeholder="Full Name" className="w-100 my-1 py-3 px-3 rounded-lg bg-white dark:bg-gray-800 border border-gray-400 dark:border-gray-700 text-gray-400 font-semibold focus:border-indigo-500 focus:outline-none" />
