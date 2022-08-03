@@ -1,24 +1,17 @@
+import { ThemeToggle } from 'hook/ThemeToggle.hook';
 import React, { useState } from 'react'
 
 type Props = {}
-const HandleToggle = () => {
-  if(localStorage.theme === undefined) {
-    localStorage.theme = 'dark';
-  }
-  localStorage.theme === 'light' ? localStorage.theme = 'dark' : localStorage.theme = 'light';
-  if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-    document.documentElement.classList.add('dark')
-  } else {
-    document.documentElement.classList.remove('dark')
-  }
-}
+
 
 const ToggleTheme = (props: Props) => {
   const [darkMode, setDarkMode] = useState(false);
 
+  const HandleToggle = ThemeToggle();
+  
   const HandleClick = () => {
 
-    HandleToggle();
+    HandleToggle;
     setDarkMode(!darkMode);
   };
   
