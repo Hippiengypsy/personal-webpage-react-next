@@ -3,6 +3,7 @@ import { Link, animateScroll as scroll, } from 'react-scroll'
 
 
 import { MenuIcon, XIcon } from '@heroicons/react/outline';
+import ToggleTheme from '../toggleDarkMode/ToggleTheme';
 
 const Navbar = () => {
     const [nav, setNav] = useState(false)
@@ -16,11 +17,12 @@ const Navbar = () => {
         <div className='flex items-center'>
           <h1 className='text-3xl font-bold mr-4 sm:text-4xl'><a href='./'>ANOTHER SIDE OF ME</a></h1>
           <ul className='hidden md:flex'>
-          <li><Link to="devAbout" smooth={true} duration={500}>About</Link></li>
-          <li><Link to="devSkills" smooth={true} duration={500}>Skills</Link></li>
-          <li><Link to="devStrength" smooth={true} duration={500}>Strength</Link></li>
-          <li><Link to="devWork" smooth={true} duration={500}>Work</Link></li>
-          <li><Link to="contact" smooth={true} duration={500}>Contact</Link></li>
+            <li><Link to="devAbout" smooth={true} duration={500}>About</Link></li>
+            <li><Link to="devSkills" smooth={true} duration={500}>Skills</Link></li>
+            <li><Link to="devStrength" smooth={true} duration={500}>Strength</Link></li>
+            <li><Link to="devWork" smooth={true} duration={500}>Work</Link></li>
+            <li><Link to="contact" smooth={true} duration={500}>Contact</Link></li>
+            <ToggleTheme />
           </ul>
         </div>
         {/* <div className='hidden md:flex pr-4'>
