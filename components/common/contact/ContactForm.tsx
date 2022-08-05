@@ -1,24 +1,55 @@
-import React from 'react'
+import React, { useRef } from 'react'
+import emailjs from "@emailjs/browser";
 
 type Props = {}
 
 const ContactForm = (props: Props) => {
+    const form = useRef<HTMLFormElement>(null);
+    const sendEmail = (e: { preventDefault: () => void; }) => {
+      e.preventDefault();
+  
+      emailjs
+        .sendForm(
+          "service_znhy4oe",
+          "template_xoq4vg8",
+          form.current!,
+          "F-5zBPOnUWtKfkZSF"
+        )
+        .then(
+          (result) => {
+            console.log(result.text);
+            console.log("message sent");
+            alert("message sent");
+          },
+          (error) => {
+            console.log(error.text);
+          }
+        );
+    };
   return (
-    <div className="">
+    <form ref={form} onSubmit={sendEmail}>
         <div>
             <span className="uppercase text-sm text-gray-600 font-bold">Full Name</span>
-            <input className="w-full bg-gray-300 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
-                type="text" placeholder="" />
+            <input
+                className="w-full bg-gray-300 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
+                type="text"
+                name='user_name'
+            />
         </div>
         <div className="mt-8">
             <span className="uppercase text-sm text-gray-600 font-bold">Email</span>
-            <input className="w-full bg-gray-300 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
-                type="text" />
+            <input
+                className="w-full bg-gray-300 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
+                type="text"
+                name='user_email'
+            />
         </div>
         <div className="mt-8">
             <span className="uppercase text-sm text-gray-600 font-bold">Message</span>
             <textarea
-                className="w-full h-32 bg-gray-300 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"></textarea>
+                className="w-full h-32 bg-gray-300 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline" 
+                name="message"
+            />
         </div>
         <div className="mt-8">
             <button
@@ -26,7 +57,7 @@ const ContactForm = (props: Props) => {
                 Send Message
             </button>
         </div>
-  </div>
+  </form>
   )
 }
 
