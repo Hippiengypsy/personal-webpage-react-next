@@ -1,30 +1,32 @@
 import React, { useRef } from 'react'
 import emailjs from "@emailjs/browser";
+import { EMAILJS_PUBLIC_KEY, EMAILJS_SEVICE_ID, EMAILJS_TEMPLATE_ID } from 'constant/emailjs.constant';
 
 type Props = {}
 
 const ContactForm = (props: Props) => {
-    const form = useRef<HTMLFormElement>(null);
-    const sendEmail = (e: { preventDefault: () => void; }) => {
-      e.preventDefault();
-  
-      emailjs
-        .sendForm(
-          "service_znhy4oe",
-          "template_xoq4vg8",
-          form.current!,
-          "F-5zBPOnUWtKfkZSF"
-        )
-        .then(
-          (result) => {
-            console.log(result.text);
-            console.log("message sent");
-            alert("message sent");
-          },
-          (error) => {
-            console.log(error.text);
-          }
-        );
+
+  const form = useRef<HTMLFormElement>(null);
+  const sendEmail = (e: { preventDefault: () => void; }) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        EMAILJS_SEVICE_ID,
+        EMAILJS_TEMPLATE_ID,
+        form.current!,
+        EMAILJS_PUBLIC_KEY,
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          console.log("message sent");
+          alert("message sent");
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
     };
   return (
     <form ref={form} onSubmit={sendEmail}>
