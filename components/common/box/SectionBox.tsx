@@ -9,8 +9,7 @@ type SectionBoxProps = {
 const SectionBox = (props: SectionBoxProps) => {
     const { children, className } = props
   return (
-    <div className={clsx('h-screen overflow-hidden items-center justify-center', className)}>
-      <div className='h-[80px]' />
+    <div className={clsx('box-section', className)}>
         {children}
     </div>
   )

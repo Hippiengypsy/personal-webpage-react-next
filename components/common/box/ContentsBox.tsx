@@ -9,7 +9,7 @@ type ContentsBoxProps = {
 const ContentsBox = (props: ContentsBoxProps) => {
     const { children, className } = props
   return (
-    <div className={clsx('text-4xl sm:text-5xl text-gray-800 dark:text-white font-extrabold tracking-tight', className)}>
+    <div className={clsx('box-contents', className)}>
         {children}
     </div>
   )

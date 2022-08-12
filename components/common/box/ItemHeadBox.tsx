@@ -1,18 +1,18 @@
 import React from 'react'
 import clsx from "clsx";
 
-type Col2BoxProps = {
+type ItemHeadBoxProps = {
   readonly children?: React.ReactNode;
   readonly className?: React.ReactNode;
 }
 
-const Col2Box = (props: Col2BoxProps) => {
+const ItemHeadBox = (props: ItemHeadBoxProps) => {
     const { children, className } = props
   return (
-    <div className={clsx('grid grid-cols-1 max-w-6xl my-auto sm:p-6 md:grid-cols-2 lg:p-8 border-2', className)}>
+    <div className={clsx('box-item box-item-head', className)}>
         {children}
     </div>
   )
 }
 
-export default Col2Box;
+export default ItemHeadBox;
