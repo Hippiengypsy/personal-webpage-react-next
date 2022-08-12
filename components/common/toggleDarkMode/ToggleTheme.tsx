@@ -1,10 +1,15 @@
+import clsx from 'clsx';
 import { useThemeToggle } from 'hook/useThemeToggle.hook';
 import React, { useState } from 'react'
 
-type Props = {}
+type ToggleThemeProps = {
+  readonly className?: React.ReactNode
+}
 
 
-const ToggleTheme = (props: Props) => {
+const ToggleTheme = (props: ToggleThemeProps) => {
+  const {className} = props;
+
   const [darkMode, setDarkMode] = useState(false);
   const ThemeToggle = useThemeToggle();
 
@@ -14,9 +19,9 @@ const ToggleTheme = (props: Props) => {
   };
   
   return (
-    <button onClick={HandleToggle}>
+    <button className={clsx('fixed bottom-12 right-4 border-2 border-black w-16 h-16 rounded-full drop-shadow-md boder-2 dark:border-white center', className)} onClick={HandleToggle}>
       {darkMode ? (
-        <svg className="w-8 h-8 md:w-10 md:h-10" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <svg className="mx-auto w-8 h-8 md:w-10 md:h-10 dark:text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path
             strokeLinecap="round"
             strokeLinejoin="round"
@@ -25,7 +30,7 @@ const ToggleTheme = (props: Props) => {
           />
         </svg>
       ) : (
-        <svg className="w-8 h-8 md:w-10 md:h-10" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <svg className="mx-auto w-8 h-8 md:w-10 md:h-10 dark:text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path
             strokeLinecap="round"
             strokeLinejoin="round"

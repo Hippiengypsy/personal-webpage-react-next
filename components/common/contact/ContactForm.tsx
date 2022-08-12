@@ -31,31 +31,30 @@ const ContactForm = (props: Props) => {
   return (
     <form ref={form} onSubmit={sendEmail}>
         <div>
-            <span className="uppercase text-sm text-gray-600 font-bold">Full Name</span>
+            <span className="uppercase text-sm font-bold">Full Name</span>
             <input
-                className="w-full bg-gray-300 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
+                className="box-border bg-inherit w-full mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
                 type="text"
                 name='user_name'
             />
         </div>
         <div className="mt-8">
-            <span className="uppercase text-sm text-gray-600 font-bold">Email</span>
+            <span className="uppercase text-sm font-bold">Email</span>
             <input
-                className="w-full bg-gray-300 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
+                className="box-border bg-inherit w-full mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
                 type="text"
                 name='user_email'
             />
         </div>
         <div className="mt-8">
-            <span className="uppercase text-sm text-gray-600 font-bold">Message</span>
+            <span className="uppercase text-sm font-bold">Message</span>
             <textarea
-                className="w-full h-32 bg-gray-300 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline" 
+                className="box-border bg-inherit w-full h-32 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline" 
                 name="message"
             />
         </div>
         <div className="mt-8">
-            <button
-                className="uppercase text-sm font-bold tracking-wide bg-indigo-500 text-gray-100 p-3 rounded-lg w-full focus:outline-none focus:shadow-outline">
+            <button className="box-border uppercase text-sm font-bold tracking-wide p-3 rounded-lg w-full focus:outline-none focus:shadow-outline">
                 Send Message
             </button>
         </div>

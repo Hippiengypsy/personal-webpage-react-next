@@ -7,6 +7,7 @@ import DevStrengths from './DevStrengths'
 import DevSkills from './DevSkills'
 import DevWork from './DevWork'
 import DevAbout from './DevAbout'
+import ToggleTheme from '@components/common/toggleDarkMode/ToggleTheme'
 
 type Props = {}
 
@@ -16,8 +17,9 @@ const DeveloperPage = (props: Props) => {
       <DevAbout />
       <DevSkills />
       <DevStrengths />
-      <DevWork />
+      {/* <DevWork /> */}
       <Contact />
+      <ToggleTheme className='' />
     </PageDesktopLayout>
   )
 }
