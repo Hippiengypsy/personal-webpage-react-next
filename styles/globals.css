@@ -46,4 +46,8 @@
     .box-border {
       @apply border-2 space-y-8 p-4 w-full  border-black  dark:border-white
     }
+
+    .nav-bar--hidden{
+      transform: translateY(-100%);
+    }
   }
