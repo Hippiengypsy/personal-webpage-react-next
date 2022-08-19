@@ -4,6 +4,7 @@ import WhoAmI from '@components/whoAmI';
 import type { NextPage } from 'next'
 import Link from 'next/link';
 import { useRouter } from 'next/router';
+import Developer from './developer';
 
 const Home: NextPage = () => {
   const router = useRouter();
@@ -12,7 +13,7 @@ const Home: NextPage = () => {
     <>
       <SEO title='Home'/>
       {/* <Loading /> */}
-      <div className='h-screen'>
+      {/* <div className='h-screen'>
         <div className='h-1/6'>
         <WhoAmI />
         </div>
@@ -28,7 +29,8 @@ const Home: NextPage = () => {
             </div>
           </Link>
         </div>
-      </div>
+      </div> */}
+      <Developer />
     </>
   )
 }
