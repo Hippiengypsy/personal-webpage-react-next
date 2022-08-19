@@ -4,6 +4,12 @@
 @tailwind components;
 @tailwind utilities;
 
+html, body {
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+}
+
 @layer base {
     /* text */
     .text-BW {
