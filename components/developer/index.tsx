@@ -17,7 +17,7 @@ const DeveloperPage = (props: Props) => {
       <DevAbout />
       <DevSkills />
       <DevStrengths />
-      {/* <DevWork /> */}
+      <DevWork />
       <Contact />
       <ToggleTheme className='' />
     </PageDesktopLayout>
