@@ -1,7 +1,7 @@
 import React from 'react'
 import { Element } from 'react-scroll';
 import ContentsBox from '../box/ContentsBox';
-import ItemHeadBox from '../box/ItemHeadBox';
+import ItemBox from '../box/ItemBox';
 import SectionBox from '../box/SectionBox';
 import ContactForm from './ContactForm';
 
@@ -12,9 +12,9 @@ const Contact = (props: Props) => {
     <Element name='contact'>
         <SectionBox className="bg-grain02 flex">
             <ContentsBox>
-                <ItemHeadBox>
+                <ItemBox boxType='box-item-head'>
                     Contact
-                </ItemHeadBox>
+                </ItemBox>
                 <div className="box-border my-20 md:my-20 lg:my-20 ">
                     <ContactForm />
                 </div>

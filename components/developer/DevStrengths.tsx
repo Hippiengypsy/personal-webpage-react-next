@@ -3,8 +3,7 @@ import { Element } from 'react-scroll';
 
 import SectionBox from '@components/common/box/SectionBox';
 import ContentsBox from '@components/common/box/ContentsBox';
-import ItemHeadBox from '@components/common/box/ItemHeadBox';
-import ItemColBox from '@components/common/box/ItemColBox';
+import ItemBox from '@components/common/box/ItemBox';
 
 type Props = {}
 
@@ -13,10 +12,10 @@ const DevStrengths = (props: Props) => {
     <Element name="devStrength">
       <SectionBox className="bg-grain02 flex">
         <ContentsBox>
-            <ItemHeadBox>
+            <ItemBox boxType='box-item-head'>
                 Strength
-            </ItemHeadBox>
-            <ItemColBox colNum='box-item-col3'>
+            </ItemBox>
+            <ItemBox boxType='box-item-col3'>
                 <div className='box-border'>
                     <div className="flex justify-center items-center mb-4 w-10 h-10 mx-auto">
                         <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5 lg:w-6 lg:h-6" viewBox="0 0 20 20" fill="currentColor">
@@ -97,7 +96,7 @@ const DevStrengths = (props: Props) => {
                         Keep your company’s lights on with customizable, iterative, and structured workflows built for all efficient teams and individual.
                     </p>
                 </div>
-            </ItemColBox>
+            </ItemBox>
         </ContentsBox>
       </SectionBox>
     </Element>

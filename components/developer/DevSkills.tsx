@@ -1,6 +1,5 @@
 import ContentsBox from '@components/common/box/ContentsBox';
-import ItemColBox from '@components/common/box/ItemColBox';
-import ItemHeadBox from '@components/common/box/ItemHeadBox';
+import ItemBox from '@components/common/box/ItemBox';
 import SectionBox from '@components/common/box/SectionBox';
 import React from 'react'
 import { Element } from 'react-scroll';
@@ -29,10 +28,10 @@ const DevSkills = (props: Props) => {
             </ItemBox>
           </Col2Box> */}
           <ContentsBox>
-              <ItemHeadBox>
+              <ItemBox boxType='box-item-head'>
                 Skills
-              </ItemHeadBox>
-              <ItemColBox colNum='box-item-col4'>
+              </ItemBox>
+              <ItemBox boxType='box-item-col4'>
                 <li>HTML</li>
                 <li>CSS</li>
                 <li>Javascript</li>
@@ -45,7 +44,7 @@ const DevSkills = (props: Props) => {
                 <li>SASS</li>
                 <li>Git / Git Hub</li>
                 <li>Sourcetree</li>
-              </ItemColBox>
+              </ItemBox>
           </ContentsBox>
       </SectionBox>
     </Element>
