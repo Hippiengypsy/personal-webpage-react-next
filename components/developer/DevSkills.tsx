@@ -9,7 +9,7 @@ type Props = {}
 const DevSkills = (props: Props) => {
   return (
     <Element name="devSkills">
-      <SectionBox className="bg-grain02 flex">
+      <SectionBox className="bg-grain02">
         {/* <Col2Box>
           <ItemBox>
             <li>Javacsript</li>

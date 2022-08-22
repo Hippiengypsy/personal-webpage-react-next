@@ -22,7 +22,7 @@ const Navbar = () => {
       const hideNavBar = Array();
   
       if (scroll.y > 150 && scroll.y - scroll.lastY > 0)
-        hideNavBar.push("nav-bar--hidden");
+        hideNavBar.push("translate-y-[-100%]");
   
       setNavClassList(hideNavBar);
     }, [scroll.y, scroll.lastY]);
@@ -33,7 +33,7 @@ const Navbar = () => {
         <div className='flex justify-between items-center w-full h-full'>
           <h1 className='text-2xl sm:text-3xl font-bold mr-4'><a href='./'>Chang Yeol Lee</a></h1>
           <ul className='text-2xl font-light space-x-10 hidden lg:flex'>
-            <li><Link to="devAbout" smooth={true} duration={500}>About</Link></li>
+            <li><Link to="devIntro" smooth={true} duration={500}>About</Link></li>
             <li><Link to="devSkills" smooth={true} duration={500}>Skills</Link></li>
             <li><Link to="devStrength" smooth={true} duration={500}>Strength</Link></li>
             <li><Link to="devWork" smooth={true} duration={500}>Work</Link></li>
@@ -49,7 +49,7 @@ const Navbar = () => {
 
       {/* menu open */}
       <ul className={clsx (navClassList.join(" "), !nav ? 'hidden' : 'absolute backdrop-filter backdrop-blur-lg bg-gray-300 bg-opacity-20 dark:bg-black dark:bg-opacity-80 text-right right-0 w-full px-8 py-8 my-2')}>
-          <li className='border-b-2 border-zinc-300 w-full'><Link onClick={handleClose} to="devAbout" smooth={true} duration={500}>About</Link></li>
+          <li className='border-b-2 border-zinc-300 w-full'><Link onClick={handleClose} to="devIntro" smooth={true} duration={500}>About</Link></li>
           <li className='border-b-2 border-zinc-300 w-full'><Link onClick={handleClose} to="devSkills" smooth={true} duration={500}>Skills</Link></li>
           <li className='border-b-2 border-zinc-300 w-full'><Link onClick={handleClose} to="devStrength" smooth={true} duration={500}>Strength</Link></li>
           <li className='border-b-2 border-zinc-300 w-full'><Link onClick={handleClose} to="devWork" smooth={true} duration={500}>Work</Link></li>

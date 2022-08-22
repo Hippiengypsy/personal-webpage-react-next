@@ -16,7 +16,7 @@ const Contact = (props: Props) => {
                     Contact
                 </ItemBox>
                 <ItemBox boxType='box-item-col2'>
-                    <div className="box-border my-20 md:my-20 lg:my-20">
+                    <div className="box-item-border my-20 md:my-20 lg:my-20">
                         <ContactForm />
                     </div>
                     <div className='space-y-8 p-4 w-full'>

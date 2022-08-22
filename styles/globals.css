@@ -26,7 +26,7 @@ html, body {
 
     /* box section -> contents -> item / border*/
     .box-section {
-      @apply text-BW w-screen h-full xl:h-screen overflow-hidden items-center justify-center border-y-2 border-black dark:border-white
+      @apply flex text-BW w-screen h-full xl:h-screen overflow-hidden items-center justify-center border-y-2 border-black dark:border-white
     }
     .box-contents {
       @apply h-full w-full px-6 sm:px-10 md:px-12 2xl:px-80
@@ -49,11 +49,14 @@ html, body {
       @apply lg:m-16 text-5xl font-extrabold tracking-tight leading-tight text-center
     }
     
-    .box-border {
+    .box-item-border {
       @apply border-2 space-y-8 p-4 w-full  border-black  dark:border-white
     }
 
+    .box-item-card {
+      @apply mb-2 text-xl font-bold dark:text-white
+    }
     .nav-bar--hidden{
-      transform: translateY(-100%);
+      @apply translate-y-[-100%]
     }
   }

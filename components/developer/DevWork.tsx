@@ -9,14 +9,14 @@ type Props = {}
 const DevWork = (props: Props) => {
   return (
     <Element name="devWork">
-      <SectionBox className="bg-grain02 flex">
+      <SectionBox className="bg-grain02">
         <ContentsBox>
           <ItemBox boxType='box-item-head'>
             Works
           </ItemBox>
           <ItemBox boxType='box-item-col2'>
             <a
-              className='box-border w-4/6 mx-auto hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black'
+              className='box-item-border w-4/6 mx-auto hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black'
               href='https://dev-cy-lee-weatherapp.netlify.app/'
               target='blank'
             >
@@ -36,7 +36,7 @@ const DevWork = (props: Props) => {
               </div>
             </a>
             <a
-              className='box-border w-4/6 mx-auto hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black'
+              className='box-item-border w-4/6 mx-auto hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black'
               href='https://dev-cy-lee-rsquotesgenerator.netlify.app/'
               target='blank'
             >

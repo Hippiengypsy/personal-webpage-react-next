@@ -33,7 +33,7 @@ const ContactForm = (props: Props) => {
         <div>
             <span className="uppercase text-sm font-bold">Full Name</span>
             <input
-                className="box-border bg-inherit w-full mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
+                className="box-item-border bg-inherit w-full mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
                 type="text"
                 name='user_name'
             />
@@ -41,7 +41,7 @@ const ContactForm = (props: Props) => {
         <div className="mt-8">
             <span className="uppercase text-sm font-bold">Email</span>
             <input
-                className="box-border bg-inherit w-full mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
+                className="box-item-border bg-inherit w-full mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
                 type="text"
                 name='user_email'
             />
@@ -49,12 +49,12 @@ const ContactForm = (props: Props) => {
         <div className="mt-8">
             <span className="uppercase text-sm font-bold">Message</span>
             <textarea
-                className="box-border bg-inherit w-full h-32 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline" 
+                className="box-item-border bg-inherit w-full h-32 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline" 
                 name="message"
             />
         </div>
         <div className="mt-8">
-            <button className="box-border uppercase text-sm font-bold tracking-wide p-3 rounded-lg w-full focus:outline-none focus:shadow-outline">
+            <button className="box-item-border uppercase text-sm font-bold tracking-wide p-3 rounded-lg w-full focus:outline-none focus:shadow-outline">
                 Send Message
             </button>
         </div>
