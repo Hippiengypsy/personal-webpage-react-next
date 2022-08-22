@@ -20,7 +20,6 @@ const ContactForm = (props: Props) => {
       .then(
         (result) => {
           console.log(result.text);
-          console.log("message sent");
           alert("message sent");
         },
         (error) => {
@@ -31,7 +30,7 @@ const ContactForm = (props: Props) => {
   return (
     <form ref={form} onSubmit={sendEmail}>
         <div>
-            <span className="uppercase text-sm font-bold">Full Name</span>
+            <span className="uppercase text-sm font-bold">your name</span>
             <input
                 className="box-item-border bg-inherit w-full mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
                 type="text"
@@ -39,7 +38,7 @@ const ContactForm = (props: Props) => {
             />
         </div>
         <div className="mt-8">
-            <span className="uppercase text-sm font-bold">Email</span>
+            <span className="uppercase text-sm font-bold">email</span>
             <input
                 className="box-item-border bg-inherit w-full mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
                 type="text"
@@ -47,7 +46,7 @@ const ContactForm = (props: Props) => {
             />
         </div>
         <div className="mt-8">
-            <span className="uppercase text-sm font-bold">Message</span>
+            <span className="uppercase text-sm font-bold">message</span>
             <textarea
                 className="box-item-border bg-inherit w-full h-32 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline" 
                 name="message"
