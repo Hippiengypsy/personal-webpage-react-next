@@ -26,7 +26,7 @@ html, body {
 
     /* box section -> contents -> item / border*/
     .box-section {
-      @apply flex text-BW w-screen h-full xl:h-screen overflow-hidden items-center justify-center border-y-2 border-black dark:border-white
+      @apply flex text-BW w-screen h-full items-center justify-center border-y-2 border-black dark:border-white
     }
     .box-contents {
       @apply h-full w-full px-6 sm:px-10 md:px-12 2xl:px-80
@@ -42,9 +42,11 @@ html, body {
       @apply sm:grid sm:grid-cols-2 lg:grid-cols-3 sm:gap-12
     }
     .box-item-col4 {
-      @apply sm:grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 sm:gap-12
+      @apply grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 sm:gap-12;
+      div {
+        @apply first:mt-8 first:sm:mt-0
+      }
     }
-
     .box-item-head {
       @apply lg:m-16 text-5xl font-extrabold tracking-tight leading-tight text-center
     }
