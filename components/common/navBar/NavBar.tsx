@@ -36,7 +36,7 @@ const Navbar = () => {
             <li><Link to="devIntro" smooth={true} duration={500}>About</Link></li>
             <li><Link to="devSkills" smooth={true} duration={500}>Skills</Link></li>
             <li><Link to="devStrength" smooth={true} duration={500}>Strength</Link></li>
-            <li><Link to="devWork" smooth={true} duration={500}>Work</Link></li>
+            <li><Link to="devWorks" smooth={true} duration={500}>Work</Link></li>
             <li><Link to="contact" smooth={true} duration={500}>Contact</Link></li>
           </ul>
         </div>
@@ -52,7 +52,7 @@ const Navbar = () => {
           <li className='border-b-2 border-zinc-300 w-full'><Link onClick={handleClose} to="devIntro" smooth={true} duration={500}>About</Link></li>
           <li className='border-b-2 border-zinc-300 w-full'><Link onClick={handleClose} to="devSkills" smooth={true} duration={500}>Skills</Link></li>
           <li className='border-b-2 border-zinc-300 w-full'><Link onClick={handleClose} to="devStrength" smooth={true} duration={500}>Strength</Link></li>
-          <li className='border-b-2 border-zinc-300 w-full'><Link onClick={handleClose} to="devWork" smooth={true} duration={500}>Work</Link></li>
+          <li className='border-b-2 border-zinc-300 w-full'><Link onClick={handleClose} to="devWorks" smooth={true} duration={500}>Work</Link></li>
           <li className='border-b-2 border-zinc-300 w-full'><Link onClick={handleClose} to="contact" smooth={true} duration={500}>Contact</Link></li>
       </ul>
     </div>

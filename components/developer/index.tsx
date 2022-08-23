@@ -5,7 +5,7 @@ import PageDesktopLayout from '@layouts/PageDesktopLayout'
 import Contact from '@components/common/contact/Contact'
 import DevStrengths from './DevStrengths'
 import DevSkills from './DevSkills'
-import DevWork from './DevWork'
+import DevWorks from './DevWorks'
 import DevIntro from './DevIntro'
 import ToggleTheme from '@components/common/toggleDarkMode/ToggleTheme'
 import DevAboutMe from './DevAboutMe'
@@ -19,7 +19,7 @@ const DeveloperPage = (props: Props) => {
       <DevIntro />
       <DevSkills />
       <DevStrengths />
-      <DevWork />
+      <DevWorks />
       <DevAboutMe />
       <DevMyBackground />
       <Contact />
