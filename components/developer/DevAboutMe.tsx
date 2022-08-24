@@ -28,10 +28,8 @@ const DevAboutMe = (props: Props) => {
 
                         <div>Since moving to Scotland, I have been carrying on improving my skills and building projects.</div><br />
 
-                        <div>I am currently looking to join a passionate and dynamic team. If you have a job role open,</div>
-                        <div className='underline'>
-                            <Link  to="contact" smooth={true} duration={500}>please get in touch!</Link>
-                        </div>
+                        <div>I am currently looking to join a passionate and dynamic team. If you have a job role open,</div><br />
+                        <Link className='underline hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black' to="contact" smooth={true} duration={500}>please get in touch!</Link>
                         <div> I enjoy talking to different people and speak good conversational English - and even a wee bit of Scottish, ken. It would be great to hear from you.</div>
                     </div>
                 </ItemBox>
