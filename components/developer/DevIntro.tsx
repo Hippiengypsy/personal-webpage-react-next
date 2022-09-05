@@ -13,7 +13,7 @@ const DevIntro = (props: Props) => {
                   <h1 className="max-w-2xl mb-4 text-4xl text-right uppercase font-extrabold leading-none md:text-5xl xl:text-6xl dark:text-white">
                     Helping people turn their ideas into a reality 
                   </h1>
-                  <div className="max-w-2xl mb-6 font-light my-40 text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">
+                  <div className="max-w-2xl mb-6 font-light my-40 lg:mb-8 md:text-lg lg:text-xl dark:text-white">
                     <p>I'm Chang Yeol Lee, a front end developer based in Scotland.</p>
                     <p>I'm currently looking to join a passionate and dynamic team.</p>
                   </div>

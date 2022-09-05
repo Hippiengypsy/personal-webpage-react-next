@@ -13,11 +13,11 @@ const DevAboutMe = () => {
                 <ItemBox boxType='box-item-head'>
                     About Me
                 </ItemBox>
-                <ItemBox boxType='box-item-col2'>
-                    <div className='space-y-8 p-4 w-full'>
+                <div>
+                    {/* <div className='space-y-8 p-4 w-full'>
                         <img className='opacity-90' src="/img/me.jpg" alt="dreams" />
-                    </div>
-                    <div className='space-y-8 p-4 w-full text-xl'>
+                    </div> */}
+                    <div className='space-y-8 p-4 w-full text-xl pb-20'>
                         <div>I'm a front end web developer, born and raised in South Korea and now based in Scotland.</div><br />
 
                         <div>My path to becoming a developer started in 2021 when I worked with Korean tech start-up Tim and Jim Inc.</div>
@@ -30,7 +30,7 @@ const DevAboutMe = () => {
                         <Link className='underline hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black' to="contact" smooth={true} duration={500}>please get in touch!</Link>
                         <div> I enjoy talking to different people and speak good conversational English - and even a wee bit of Scottish, ken. It would be great to hear from you.</div>
                     </div>
-                </ItemBox>
+                </div>
             </ContentsBox>
         </SectionBox>
     </Element>

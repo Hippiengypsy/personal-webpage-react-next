@@ -14,8 +14,8 @@ const DevMyBackground = (props: Props) => {
                 <ItemBox boxType='box-item-head'>
                     My Background
                 </ItemBox>
-                <ItemBox boxType='box-item-col2'>
-                    <div className='space-y-8 p-4 w-full text-xl'>
+                <div>
+                    <div className='space-y-8 p-4 w-full text-xl pb-20'>
                         <div>Before becoming a developer, I worked in the music industry as a composer and session guitarist.</div>
                         <div>I have worked in different genres, from hip hop to orchestral composition. Check out my tunes on &nbsp;
                             <a className='underline hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black' href="https://open.spotify.com/album/7nfhivgWtclQl0aw8aJgm6" target="blank">
@@ -28,10 +28,10 @@ const DevMyBackground = (props: Props) => {
 
                         <div>In my spare time, I enjoy playing board games, taking photos and tasting whiskies from across Scotland.</div>
                     </div>
-                    <div className='space-y-8 p-4 w-full'>
+                    {/* <div className='space-y-8 p-4 w-full'>
                         <img className='opacity-90' src="/img/me.jpg" alt="dreams" />
-                    </div>
-                </ItemBox>
+                    </div> */}
+                </div>
             </ContentsBox>
         </SectionBox>
     </Element>
