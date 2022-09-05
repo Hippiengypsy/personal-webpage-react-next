@@ -19,7 +19,7 @@ const ToggleTheme = (props: ToggleThemeProps) => {
   };
   
   return (
-    <button className={clsx('fixed bottom-12 right-4 border-2 border-black w-16 h-16 rounded-full drop-shadow-md boder-2 dark:border-white center', className)} onClick={HandleToggle}>
+    <button className={clsx('fixed bottom-12 right-4 border-2 border-black sm:w-16 sm:h-16 rounded-full drop-shadow-md boder-2 dark:border-white center', className)} onClick={HandleToggle}>
       {darkMode ? (
         <svg className="mx-auto w-8 h-8 md:w-10 md:h-10 dark:text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path
