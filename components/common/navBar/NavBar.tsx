@@ -28,7 +28,7 @@ const Navbar = () => {
     }, [scroll.y, scroll.lastY]);
   
   return (
-    <div className={clsx (navClassList.join(" "), 'text-BW bg-gray-300 bg-opacity-20 dark:bg-black dark:bg-opacity-80 backdrop-filter backdrop-blur-lg px-4 py-8 md:px-[48px] md:py-[35px] text-lg w-screen z-10 sticky top-0')}>
+    <div className={clsx (navClassList.join(" "), 'text-BW bg-white dark:bg-black  backdrop-filter backdrop-blur-lg px-4 py-8 md:px-[48px] md:py-[35px] text-lg w-screen z-10 sticky top-0')}>
       <div className='flex justify-between items-center w-full h-full'>
         <div className='flex justify-between items-center w-full h-full'>
           <h1 className='text-2xl sm:text-3xl font-bold mr-4'><a href='./'>Chang Yeol Lee</a></h1>
@@ -48,12 +48,12 @@ const Navbar = () => {
       </div>
 
       {/* menu open */}
-      <ul className={clsx (navClassList.join(" "), !nav ? 'hidden' : 'absolute backdrop-filter backdrop-blur-lg bg-gray-300 bg-opacity-20 dark:bg-black dark:bg-opacity-80 text-right right-0 w-full px-8 py-8 my-2')}>
-          <li className='border-b-2 border-zinc-300 w-full'><Link onClick={handleClose} to="devIntro" smooth={true} duration={500}>About</Link></li>
-          <li className='border-b-2 border-zinc-300 w-full'><Link onClick={handleClose} to="devSkills" smooth={true} duration={500}>Skills</Link></li>
-          <li className='border-b-2 border-zinc-300 w-full'><Link onClick={handleClose} to="devStrength" smooth={true} duration={500}>Strength</Link></li>
-          <li className='border-b-2 border-zinc-300 w-full'><Link onClick={handleClose} to="devWorks" smooth={true} duration={500}>Work</Link></li>
-          <li className='border-b-2 border-zinc-300 w-full'><Link onClick={handleClose} to="contact" smooth={true} duration={500}>Contact</Link></li>
+      <ul className={clsx (navClassList.join(" "), !nav ? 'hidden' : 'absolute backdrop-filter backdrop-blur-lg bg-white dark:bg-black text-right right-0 w-full px-8 py-8 my-2')}>
+          <li className='border-b-2 border-black dark:border-white w-full'><Link onClick={handleClose} to="devIntro" smooth={true} duration={500}>About</Link></li>
+          <li className='border-b-2 border-black dark:border-white w-full'><Link onClick={handleClose} to="devSkills" smooth={true} duration={500}>Skills</Link></li>
+          <li className='border-b-2 border-black dark:border-white w-full'><Link onClick={handleClose} to="devStrength" smooth={true} duration={500}>Strength</Link></li>
+          <li className='border-b-2 border-black dark:border-white w-full'><Link onClick={handleClose} to="devWorks" smooth={true} duration={500}>Work</Link></li>
+          <li className='border-b-2 border-black dark:border-white w-full'><Link onClick={handleClose} to="contact" smooth={true} duration={500}>Contact</Link></li>
       </ul>
     </div>
   );
