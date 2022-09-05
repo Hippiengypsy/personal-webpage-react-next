@@ -4,9 +4,8 @@ import SectionBox from '@components/common/box/SectionBox'
 import React from 'react'
 import { Element, Link } from 'react-scroll'
 
-type Props = {}
 
-const DevAboutMe = (props: Props) => {
+const DevAboutMe = () => {
   return (
     <Element name='devAboutMe'>
         <SectionBox className="bg-grain02">
@@ -21,10 +20,9 @@ const DevAboutMe = (props: Props) => {
                     <div className='space-y-8 p-4 w-full text-xl'>
                         <div>I'm a front end web developer, born and raised in South Korea and now based in Scotland.</div><br />
 
-                        <div>My path to becoming a developer started in 2021 when I worked with Korean tech start-up [Tim and Jim Co].</div>
-                        <div>Working 12 hours a day, 6 days a week, my colleagues and I learnt the programming skills we needed to launch the company's first service, a new type of SNS called Dongle Space.</div>
-                        <div>It was hard but I found a lot of joy in solving problems, working with razor sharp focus and applying my skills in the real world.</div>
-                        <div>That was my "Zero to One" moment of my coding experience.</div><br />
+                        <div>My path to becoming a developer started in 2021 when I worked with Korean tech start-up Tim and Jim Inc.</div>
+                        <div>Working 12 hours a day, 6 days a week, my colleagues and I learnt the programming skills we needed to manage the company's first service, a new type of SNS called Dongle Space.</div>
+                        <div>It was hard but I found a lot of joy in solving problems, working with razor sharp focus and applying my skills in the real world.</div><br />
 
                         <div>Since moving to Scotland, I have been carrying on improving my skills and building projects.</div><br />
 

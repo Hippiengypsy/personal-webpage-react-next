@@ -17,15 +17,19 @@ const DevMyBackground = (props: Props) => {
                 <ItemBox boxType='box-item-col2'>
                     <div className='space-y-8 p-4 w-full text-xl'>
                         <div>Before becoming a developer, I worked in the music industry as a composer and session guitarist.</div>
-                        <div>I have worked in different genres, from hip hop to orchestral composition. Check out my tunes on Spotify. [link]</div><br />
+                        <div>I have worked in different genres, from hip hop to orchestral composition. Check out my tunes on &nbsp;
+                            <a className='underline hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black' href="https://open.spotify.com/album/7nfhivgWtclQl0aw8aJgm6" target="blank">
+                                Spotify!
+                            </a>
+                        </div><br />
 
-                        <div>My family background is in traditional Korean luthiery, making a stringed instrument called the Gayageum.</div>
-                        <div>My lifelong dream is to take up my grandfather's legacy as a woodworker and share the rich heritage of Korean luthiery with the world.</div><br />
+                        <div>I'm a proud descendant of traditional Korean luthiers who make Gayageum, a stringed instrument.</div>
+                        <div>So it's my lifelong dream to carry on my grandfather's legacy and introduce the world to the rich tradition of Korean luthiery.</div><br />
 
                         <div>In my spare time, I enjoy playing board games, taking photos and tasting whiskies from across Scotland.</div>
                     </div>
                     <div className='space-y-8 p-4 w-full'>
-                        something image
+                        <img className='opacity-90' src="/img/me.jpg" alt="dreams" />
                     </div>
                 </ItemBox>
             </ContentsBox>
