@@ -19,8 +19,13 @@ const DevMyBackground = (props: Props) => {
                         <div>Before becoming a developer, I worked in the music industry as a composer and session guitarist.</div>
                         <div>I have worked in different genres, from hip hop to orchestral composition. Check out my tunes on &nbsp;
                             <a className='underline hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black' href="https://open.spotify.com/album/7nfhivgWtclQl0aw8aJgm6" target="blank">
-                                Spotify!
+                                Spotify
                             </a>
+                            &nbsp;and&nbsp;
+                            <a className='underline hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black' href="https://soundcloud.com/hippie-king" target="blank">
+                                Soundcloud
+                            </a>
+                            .
                         </div><br />
 
                         <div>I'm a proud descendant of traditional Korean luthiers who make Gayageum, a stringed instrument.</div>
