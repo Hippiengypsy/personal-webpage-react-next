@@ -27,7 +27,7 @@ const DevWorks = (props: Props) => {
                   <div className="font-bold text-xl mb-2">Minimalist Todo List App</div>
                 </div>
                 <div className="px-6 pt-4 pb-2">
-                  <p>Don't trust your memory but your memos.</p>
+                  <p>Don't trust your memory but your memo.</p>
                   <p></p>
                 </div>
               </a>
@@ -38,7 +38,7 @@ const DevWorks = (props: Props) => {
                 target='blank'
               >
                 <div className='flex justify-center'>
-                  <img src='https://screenshot-proxy.netlify.app/f_avif,w_336/https://d33wubrfki0l68.cloudfront.net/62ffb69d37e9f802d46daf3d/screenshot_2022-08-19-16-14-22-0000.png' />
+                  <img src='https://screenshot-proxy.netlify.app/f_avif,w_336/https://d33wubrfki0l68.cloudfront.net/6326f71c0a7e3c0008dbd468/screenshot_2022-09-18-10-48-07-0000.png' />
                 </div>
                 <div className="px-6 py-4">
                   <div className="font-bold text-xl mb-2">Minimalist Weather App</div>
@@ -55,7 +55,7 @@ const DevWorks = (props: Props) => {
                 target='blank'
               >
                 <div className='flex justify-center'>
-                  <img src="https://screenshot-proxy.netlify.app/f_avif,w_336/https://d33wubrfki0l68.cloudfront.net/62ffb194b96f5d0008c53a1d/screenshot_2022-08-19-15-52-42-0000.png" />
+                  <img src="https://screenshot-proxy.netlify.app/f_avif,w_336/https://d33wubrfki0l68.cloudfront.net/6325cf0c395bc80009a807b1/screenshot_2022-09-17-13-44-35-0000.png" />
                 </div>
                 <div className="px-6 py-4">
                   <div className="font-bold text-xl mb-2">Ron Swanson random quotes generator</div>
