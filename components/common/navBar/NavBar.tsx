@@ -10,7 +10,7 @@ const Navbar = () => {
       setNav(!nav);
       console.log("handleClick");
     }
-    const handleClose =()=> setNav(!nav)
+    const handleClose = () => setNav(!nav)
 
     // hide navbar on scroll down
 
