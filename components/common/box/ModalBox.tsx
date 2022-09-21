@@ -1,16 +1,17 @@
-import React, { useState } from 'react'
+import React, { Dispatch, SetStateAction } from 'react'
 
 interface ModalBoxProps {
     readonly children: React.ReactNode;
     readonly isOpen: boolean;
-    readonly onClose: CallableFunction;
+    readonly setIsOpen: Dispatch<SetStateAction<boolean>>;
 }
 const ModalBox = (props: ModalBoxProps) => {
-    const { children, isOpen, onClose } = props
+    const { children, isOpen, setIsOpen } = props
     const handleClose = () => {
-        onClose(false)
+        setIsOpen(false)
     }
-  return (
+
+    return (
         <div className={isOpen? "flex": "hidden"}>
             <button className='w-10 h-10 border-2' onClick={handleClose}>x</button>
             {children}

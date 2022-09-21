@@ -17,10 +17,7 @@ const DevWorks = (props: Props) => {
     setIndex(e)
     setIsModalOpen(true)
   }
-  const handleClose = () => {
-    setIsModalOpen(false)
-}
-
+  
   return (
     <Element name="devWorks">
       <SectionBox className="bg-grain02">
@@ -85,7 +82,7 @@ const DevWorks = (props: Props) => {
               </div>
             </div>
           </ItemBox>
-          <ModalBox isOpen={isModalOpen} onClose={handleClose}>
+          <ModalBox isOpen={isModalOpen} setIsOpen={setIsModalOpen}>
             {index === 1 && <MinimalistTodoListApp />}
             {index === 2 && <MinimalistWeatherApp />}
             {index === 3 && <RSRQGenerator />}
