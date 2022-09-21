@@ -1,6 +1,6 @@
+import Button from '@components/common/box/Button'
 import ContentsBox from '@components/common/box/ContentsBox'
 import ItemBox from '@components/common/box/ItemBox'
-import SectionBox from '@components/common/box/SectionBox'
 import React from 'react'
 
 type Props = {}
@@ -22,7 +22,7 @@ const MinimalistTodoListApp = (props: Props) => {
                                 href='https://dev-cy-lee-todolist.netlify.app/'
                                 target='blank'
                             >
-                                <button className='border-2 border-black dark:border-white rounded-xl p-2'>Live Demo</button>
+                                <Button text='Live Demo' />
                             </a>
                         </div>
                     </div>
