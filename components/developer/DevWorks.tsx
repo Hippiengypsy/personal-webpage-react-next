@@ -2,9 +2,9 @@ import ContentsBox from '@components/common/box/ContentsBox';
 import ItemBox from '@components/common/box/ItemBox';
 import ModalBox from '@components/common/box/ModalBox';
 import SectionBox from '@components/common/box/SectionBox';
-import MinimalistTodoListApp from '@pages/developer/works/MinimalistTodoListApp';
-import MinimalistWeatherApp from '@pages/developer/works/MinimalistWeatherApp';
-import RSRQGenerator from '@pages/developer/works/RSRQGenerator';
+import MinimalistTodoListApp from '@components/developer/works/MinimalistTodoListApp';
+import MinimalistWeatherApp from '@components/developer/works/MinimalistWeatherApp';
+import RSRQGenerator from '@components/developer/works/RSRQGenerator';
 import React, { useState } from 'react'
 import { Element } from 'react-scroll';
 
@@ -25,6 +25,11 @@ const DevWorks = (props: Props) => {
           <ItemBox boxType='box-item-head'>
             Works
           </ItemBox>
+          <ModalBox isOpen={isModalOpen} setIsOpen={setIsModalOpen}>
+            {index === 1 && <MinimalistTodoListApp />}
+            {index === 2 && <MinimalistWeatherApp />}
+            {index === 3 && <RSRQGenerator />}
+          </ModalBox>
           <ItemBox boxType='box-item-col2'>
             <div
               className='box-item-border lg:w-4/6 mx-auto hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black'
@@ -82,11 +87,7 @@ const DevWorks = (props: Props) => {
               </div>
             </div>
           </ItemBox>
-          <ModalBox isOpen={isModalOpen} setIsOpen={setIsModalOpen}>
-            {index === 1 && <MinimalistTodoListApp />}
-            {index === 2 && <MinimalistWeatherApp />}
-            {index === 3 && <RSRQGenerator />}
-          </ModalBox>
+
         </ContentsBox>
        </SectionBox>
     </Element>

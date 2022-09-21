@@ -12,9 +12,27 @@ const ModalBox = (props: ModalBoxProps) => {
     }
 
     return (
-        <div className={isOpen? "flex": "hidden"}>
-            <button className='w-10 h-10 border-2' onClick={handleClose}>x</button>
-            {children}
+        <div className={`fixed top-0 right-0 ease-in-out duration-300 ${isOpen? "-translate-x-0": "translate-x-full"}`}>
+            <div className='w-screen h-screen bg-gray-400 bg-opacity-80'>
+                {/* <!-- Main modal --> */}
+                <div className={`ease-in-out duration-700 ${isOpen? "-translate-x-0": "translate-x-full"}`}>
+                    <div className="p-4 w-11/12 sm:w-3/4 lg:w-3/5 h-screen mx-auto">
+                        {/* <!-- Modal content --> */}
+                        <div className="bg-grain01 rounded-lg h-full overflow-auto">
+                            <button
+                                type="button"
+                                onClick={handleClose}
+                                className="p-1.5 float-right"
+                            >
+                                <svg aria-hidden="true" className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clipRule="evenodd"></path></svg>
+                            </button>
+                            <div className="">
+                                {children}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
       )
 }
