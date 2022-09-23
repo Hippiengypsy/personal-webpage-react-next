@@ -2,7 +2,7 @@ import React, {useEffect, useState} from 'react';
 import { Link, animateScroll as scroll, } from 'react-scroll'
 import { MenuIcon, XIcon } from '@heroicons/react/outline';
 import clsx from 'clsx';
-import useScrollListener from 'hook/useScrollListener';
+import useScrollListener from 'hook/useScrollListener.hook';
 
 const Navbar = () => {
     const [nav, setNav] = useState(false)
