@@ -8,14 +8,14 @@ type Props = {}
 const MinimalistWeatherApp = (props: Props) => {
   return (
     <div className="w-full h-full">
-        <ContentsBox>
+        <div className='h-full w-full px-6 sm:px-10 md:px-12'>
             <ItemBox boxType='box-item-head' className='text-3xl md:text-4xl'>
             Minimalist Weather App
             </ItemBox>
             <div>
                 <div>
                     <div className='flex justify-center'>
-                    <img src='https://screenshot-proxy.netlify.app/f_avif,w_336/https://d33wubrfki0l68.cloudfront.net/6326f71c0a7e3c0008dbd468/screenshot_2022-09-18-10-48-07-0000.png' />
+                    <img src='/img/gif/weather.gif' />
                     </div>
                     <div className='flex justify-center my-2'>
                         <a
@@ -26,17 +26,21 @@ const MinimalistWeatherApp = (props: Props) => {
                         </a>
                     </div>
                 </div>
-                <div className='mt-10'>
-                    <div>use open source API</div>
-                    <div>Javascript library/framework: React.js Next.js based on Typescript</div>
-                    <div>CSS: Tailwind CSS</div>
-                    <div>Other Packages: Axios</div>
-                    <div>Feedback for myself?</div>
-                    <li>It was a nice experience to make types/interfaces for the data.</li>
-                    <li>I've made custom calcultator for converting fahrenheit to celsius.</li>
+                <div className='my-10'>
+                    <div className='my-2 font-bold'>What library / package used?</div>
+                    <hr />
+                    <li>JS library/framework: React.js Next.js based on Typescript</li>
+                    <li>CSS: Tailwind CSS</li>
+                    <li>Other Packages: Axios</li>
+                    <li>Open source API: openweathermap</li>
+                    <div className='my-2 font-bold'>How it's working?</div>
+                    <hr />
+                    <li>Fetch the data from API by using Axios and custom type/interface on typescript</li>
+                    <li>Convert data by custom fahrenheit to celsius calcultator</li>
+                    <li>Map the data</li>
                 </div>
             </div>
-        </ContentsBox>
+        </div>
     </div>
 
     )

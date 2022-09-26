@@ -8,14 +8,14 @@ type Props = {}
 const MinimalistTodoListApp = (props: Props) => {
     return (
         <div className="w-full h-full">
-            <ContentsBox>
+            <div className="h-full w-full px-6 sm:px-10 md:px-12">
                 <ItemBox boxType='box-item-head' className='text-3xl md:text-4xl'>
                     Minimalist Todo List App
                 </ItemBox>
                 <div>
                     <div>
                         <div className='flex justify-center'>
-                            <img src='https://screenshot-proxy.netlify.app/f_avif,w_336/https://d33wubrfki0l68.cloudfront.net/63162bf767cd5712d20f7763/screenshot_2022-09-05-17-04-56-0000.png' />
+                            <img src='/img/gif/todo.gif' />
                         </div>
                         <div className='flex justify-center my-2'>
                             <a
@@ -26,12 +26,21 @@ const MinimalistTodoListApp = (props: Props) => {
                             </a>
                         </div>
                     </div>
-                    <div className='mt-10'>
-                        <div>CRUD function</div>
-                        <div>React.js Next.js Typescript Redux-Toolkit Tailwind CSS</div>
+                    <div className='my-10'>
+                        <div className='my-2 font-bold'>What library / package used?</div>
+                        <hr />
+                        <li>JS library/framework: React.js Next.js based on Typescript</li>
+                        <li>CSS: Tailwind CSS</li>
+                        <li>State Management: Redux-Toolkit</li>
+                        <div className='my-2 font-bold'>How it's working?</div>
+                        <hr />
+                        <li>Send "id", "text", "completed" data to redux slice when form onSubmit</li>
+                        <li>Toggle completed icon onClicked</li>
+                        <li>Delete the item when icon onClicked</li>
+                        <li>Clear the list when button onClicked</li>
                     </div>
                 </div>
-            </ContentsBox>
+            </div>
         </div>
     )
 }
