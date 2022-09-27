@@ -27,17 +27,26 @@ const MinimalistWeatherApp = (props: Props) => {
                     </div>
                 </div>
                 <div className='my-10'>
-                    <div className='my-2 font-bold'>What library / package used?</div>
+                    <div className='my-2 font-bold'>Overview</div>
+                    <hr />
+                    <div>A weather app using open source API.</div>
+                    <div>Users can search location to bring up weather data for that area.</div>
+                    <div className='my-2 font-bold'>Process</div>
+                    <hr />
+                    <li>Structured folder and component hierarchy</li>
+                    <li>Created form</li>
+                    <li>Styled layouts with Tailwind CSS</li>
+                    <li>Used axios and "openweathermap" API for fetching data</li>
+                    <li>Hid API keys in environment variables and added .env on gitignore</li>
+                    <li>Created type/interface with typescript for the fetched data</li>
+                    <li>Created custom Fahrenheit to Celsius converter for temperature data</li>
+                    <li>Testing and debugging</li>
+                    <div className='my-2 font-bold'>Libraries / Packages used</div>
                     <hr />
                     <li>JS library/framework: React.js Next.js based on Typescript</li>
                     <li>CSS: Tailwind CSS</li>
                     <li>Other Packages: Axios</li>
                     <li>Open source API: openweathermap</li>
-                    <div className='my-2 font-bold'>How it's working?</div>
-                    <hr />
-                    <li>Fetch the data from API by using Axios and custom type/interface on typescript</li>
-                    <li>Convert data by custom fahrenheit to celsius calcultator</li>
-                    <li>Map the data</li>
                 </div>
             </div>
         </div>

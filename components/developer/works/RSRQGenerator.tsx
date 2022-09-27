@@ -27,17 +27,26 @@ const RSRQGenerator = (props: Props) => {
                     </div>
                 </div>
                 <div className='my-10'>
-                    <div className='my-2 font-bold'>What library / package used?</div>
+                    <div className='my-2 font-bold'>Overview</div>
+                    <hr />
+                    <div>A fun quote generator app using open source API.</div>
+                    <div>Users can simply click the button to get a quote from "Parks and Recreation" legend Ron Swanson.</div>
+                    <div>As a fan of lagavulin, it feels good.</div>
+                    <div className='my-2 font-bold'>Process</div>
+                    <hr />
+                    <li>Structured folder and component hierarchy</li>
+                    <li>Created page structure</li>
+                    <li>Styled layouts with Tailwind CSS</li>
+                    <li>Used axios and "Ron Swanson quotes" API for fetching data</li>
+                    <li>Developed function to fetch and map data onClick</li>
+                    <li>Developed function to change the button text onClick</li>
+                    <li>Testing and debugging</li>
+                    <div className='my-2 font-bold'>Libraries / Packages used</div>
                     <hr />
                     <li>JS library/framework: React.js Next.js based on Typescript</li>
                     <li>CSS: Tailwind CSS</li>
                     <li>Other Packages: Axios</li>
                     <li>Open source API: Ron Swanson quotes API</li>
-                    <div className='my-2 font-bold'>How it's working?</div>
-                    <hr />
-                    <li>Fetch the data from API by using Axios</li>
-                    <li>Change the text when button onClick</li>
-                    <li>Map the data</li>
                 </div>
             </div>
         </div>

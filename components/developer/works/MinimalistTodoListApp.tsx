@@ -27,17 +27,23 @@ const MinimalistTodoListApp = (props: Props) => {
                         </div>
                     </div>
                     <div className='my-10'>
-                        <div className='my-2 font-bold'>What library / package used?</div>
+                        <div className='my-2 font-bold'>Overview</div>
+                        <hr />
+                        <div>A todo list app for demonstrating CRUD functions.</div>
+                        <div>Designed with a minimalist UI to make it simple for users to keep track of their tasks.</div>
+                        <div className='my-2 font-bold'>Process</div>
+                        <hr />
+                        <li>Structured folder and component hierarchy</li>
+                        <li>Created form</li>
+                        <li>Styled layouts with Tailwind CSS</li>
+                        <li>Created a redux slice for onClick functions to create, toggle, delete list items and clear the list</li>
+                        <li>Created type/interface with typescript for the redux slice</li>
+                        <li>Testing and debugging</li>
+                        <div className='my-2 font-bold'>Libraries / Packages used</div>
                         <hr />
                         <li>JS library/framework: React.js Next.js based on Typescript</li>
                         <li>CSS: Tailwind CSS</li>
                         <li>State Management: Redux-Toolkit</li>
-                        <div className='my-2 font-bold'>How it's working?</div>
-                        <hr />
-                        <li>Send "id", "text", "completed" data to redux slice when form onSubmit</li>
-                        <li>Toggle completed icon onClicked</li>
-                        <li>Delete the item when icon onClicked</li>
-                        <li>Clear the list when button onClicked</li>
                     </div>
                 </div>
             </div>
