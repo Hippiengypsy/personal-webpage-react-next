@@ -19,7 +19,7 @@ const DevIntro = (props: Props) => {
                   </div>
               </div>
               <div className="hidden opacity-80 lg:mt-0 lg:col-span-5 lg:flex lg:ml-10">
-                  <img className='opacity-90' src="/img/me.jpg" alt="intro" />
+                  <img className='opacity-90' src="/img/profile img-temp.jpg" alt="intro" />
               </div>
           </div>
         </SectionBox>
