@@ -1,4 +1,4 @@
-import React, { Dispatch, SetStateAction } from 'react'
+import React, { useEffect, Dispatch, SetStateAction } from 'react'
 
 interface ModalBoxProps {
     readonly children: React.ReactNode;
@@ -9,6 +9,9 @@ const ModalBox = (props: ModalBoxProps) => {
     const { children, isOpen, setIsOpen } = props
     const handleClose = () => {
         setIsOpen(false)
+        const scrollY = document.body.style.top;
+        document.body.style.cssText = '';
+        window.scrollTo(0, parseInt(scrollY || '0', 10) * -1);
     }
 
     return (
